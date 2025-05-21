@@ -1,0 +1,203 @@
+
+% chapter 1 of calculus for the practical man
+
+\chapter{FUNDAMENTAL IDEAS. RATES AND DIFFERENTIALS}
+
+\section{Rates}
+The most natural illustration of a rate is that involving motion and time. If an object is moving steadily as time passes, its speed is the distance or space passed over in a specified unit of time, as, for example, 40 miles per hour, 1 mile per minute, 32 feet per second, etc. This speed of motion is the time rate of change of distance, and is found simply by dividing the space passed over by the time required to pass over it, both being expressed in suitable units of measurement. If the motion is such as to increase the distance from a chosen reference point, the rate is taken as positive; if the distance on that same side of the reference point decreases, the rate is said to be negative.
+
+These familiar notions are visualized and put in concise mathematical form by considering a picture or graph representing the motion. Thus in \autoref{fig:straight_line} let the motion take place along the straight line $OX$ in the direction from $O$ toward $X$. Let $O$ be taken as the reference point, and let $P$ represent the position of the moving object or point. The direction of motion is then indicated by the arrow and the distance of $P$ from $O$ at any particular instant is the length $OP$ which is represented by $x$.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+    % Draw the horizontal line
+    \draw[-] (-1,0) -- (6,0);
+    
+    % Add points
+    \node[below] at (0,0) {$O$};
+    \node[below] at (2,0) {$x$};
+    \node[below] at (3.5,0) {$P$};
+    \node[below] at (5,0) {$P'$};
+    \node[right] at (6,0) {$X$};
+    
+    % Add points as dots
+    \fill (0,0) circle (1.5pt);
+    \fill (3.5,0) circle (1.5pt);
+    \fill (5,0) circle (1.5pt);
+    
+    % Add arrow
+    \draw[->] (3,0.3) -- (4,0.3);
+\end{tikzpicture}
+\caption{Motion along a straight line.}
+\label{fig:straight_line}
+\end{figure}
+
+When the speed is uniform and the whole distance $x$ and the total time $t$ required to reach $P$ are both known, the speed or rate is simply $x \div t$ or $\frac{x}{t}$. If the total distance and time from the starting point are not known, but the rate is still constant, the clock times of passing two points $P$ and $P'$ can be noted and the corresponding distances $x$ and $x'$ measured. Then the rate is
+\[\text{Rate} = \frac{x' - x}{t' - t}\]
+
+If the $x$ difference is written $dx$ and the $t$ difference is written $dt$ then the
+\[\text{Rate} = \frac{dx}{dt} \tag{1} \label{1}\]
+
+The symbols $dx$ and $dt$ are not products $d$ times $x$ or $d$ times $t$ as in algebra, but each represents a single quantity, the $x$ or $t$ difference. They are pronounced as one would pronounce his own initials, thus: $dx$, "dee-ex"; and $dt$, "dee-tee." These symbols and the quantities which they represent are called differentials. Thus $dx$ is the differential of $x$ and $dt$ the differential of $t$.
+
+If, in \autoref{fig:straight_line}, $P$ moves in the direction indicated by the arrow, the rate is taken as positive and the expression \eqref{1} is written
+\[\text{Rate} = +\frac{dx}{dt}\]
+
+This will apply when $P$ is to the right or left of $O$, so long as the sense of the motion is toward the right (increasing $x$) as indicated by the arrow. If it is in the opposite sense, the rate is negative (decreasing $x$) and is written
+\[\text{Rate} = -\frac{dx}{dt}\]
+
+These considerations hold in general and we shall consider always that when the rate of any variable is positive the variable is increasing, when negative it is decreasing.
+
+So far the idea involved is familiar and only the terms used are new. Suppose, however, the object or point $P$ is increasing its speed when we attempt to measure and calculate the rate, or suppose it is slowing down, as when accelerating an automobile or applying the brakes to stop it; what is the speed then, and how shall the rate be measured or expressed in symbols? Or suppose $P$ moves on a circle or other curved path so that its direction is changing, and the arrow in \autoref{fig:straight_line} no longer has the significance we have attached to it. How then shall $\frac{dx}{dt}$ be measured or expressed?
+
+These questions bring us to the consideration of variable rates and the heart of the methods of calculus, and we shall find that the scheme given above still applies, the key to the question lying in the differentials $dx$ and $dt$.
+
+The idea of differentials has here been developed at considerable length because of its extreme importance, and should be mastered thoroughly. The next section will emphasize this statement.
+
+\section{Varying Rates}
+With the method already developed in the preceding section, the present subject can be discussed concisely and more briefly. If the speed of a moving point be not uniform, its numerical measure at any particular instant is the number of units of distance which would be described in a unit of time if the speed were to remain constant from and after that instant. Thus, if a car is speeding up as the engine is accelerated, we would say that it has a velocity of, say, 32 feet per second at any particular instant if it should move for the next second at the same speed it had at that instant and cover a distance of 32 feet. The actual space passed over may be greater if accelerating or less if braking, because of the change in the rate which takes place in that second, but the rate at that instant would be that just stated.
+
+To obtain the measure of this rate at any specified instant, the same principle is used as was used in article 1. Thus, if in \autoref{fig:straight_line} $dt$ is any chosen interval of time and $PP' = dx$ is the space which would be covered in that interval, were $P$ to move over the distance $PP'$ with the same speed unchanged which it had at $P$, then the rate at $P$ is $\frac{dx}{dt}$. The quantity $dx$ is plus or minus according as $P$ moves in the sense of the arrow in \autoref{fig:straight_line} or the opposite.
+
+If the point $P$ is moving on a curved path of any kind so that its direction is continually changing, say on a circle, as in \autoref{fig:circle_motion}, then the direction at any instant is that of the tangent to the path at the point $P$ at that instant, as $PT$ at $P$ and $P'T'$ at $P'$. The space differential $ds$ is laid off on the direction at $P$ and is taken as the space which $P$ would cover in the time interval $dt$ if the speed and direction were to remain the same during the interval as at $P$. The rate is then, as usual, $\frac{ds}{dt}$ and is plus or minus according as $P$ moves along the curve in the sense indicated by the curved arrow or the reverse.
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+    % Draw the circle
+    \draw (0,0) circle (2cm);
+    
+    % Add center point O
+    \fill (0,0) circle (1.5pt);
+    \node[below] at (0,0) {$O$};
+    
+    % Add points P and P'
+    \coordinate (P) at (45:2);
+    \coordinate (Pprime) at (90:2);
+    \node[right] at (P) {$P$};
+    \node[above] at (Pprime) {$P'$};
+    \fill (P) circle (1.5pt);
+    \fill (Pprime) circle (1.5pt);
+    
+    % Draw longer tangent lines T and T' in counterclockwise direction
+    \draw[->] (P) -- ++(135:1.6) node[above] {$T$};
+    \draw[->] (Pprime) -- ++(180:1.6) node[left] {$T'$};
+    
+    % Add ds label halfway along T vector
+    \node[above] at ($(P)+(135:0.8)$) {$ds$};
+    
+    % Add inner curved arrow for direction
+    \draw[->] (45:1.5) arc (45:90:1.5);
+\end{tikzpicture}
+\caption{Motion along a circular path.}
+\label{fig:circle_motion}
+\end{figure}
+
+\section{Differentials}
+In the preceding discussions the quantities $dx$ or $ds$ and $dt$ have been called the differentials of $x$, $s$ and $t$. Now time passes steadily and without ceasing so that $dt$ will always exist. By reference to chosen instants of time the interval $dt$ can be made as great or as small as desired, but it is always formed in the same manner and sense and is always positive, since time never flows backward. The differential of any other variable quantity $x$ may be formed in any way desired if the variation of $x$ is under control and may be great or small, positive or negative, as desired, or if the variable is not under control its differential may be observed or measured and its sense or sign (plus or minus) determined, positive for an increase during the interval $dt$ and negative for a decrease. The rate of $x$, $dx/dt$, will then depend on $dx$ and since $dt$ is always positive, $dx/dt$ will be positive or negative according as $dx$ is plus or minus.
+
+From the discussions in articles 1 and 2 it is at once seen that the definition of the differential of a variable quantity is the following:
+
+\emph{The differential $dx$ of a variable quantity $x$ at any instant is the change in $x$ which would occur in the next interval of time $dt$ if $x$ were to continue to change uniformly in the interval $dt$ with the same rate which it has at the beginning of $dt$.}
+
+Using this definition of the differential we then define:
+
+\emph{The mathematical rate of $x$ at the specified instant is the quotient of $dx$ by $dt$, that is, the ratio of the differentials.}
+
+The differential of any variable quantity is indicated by writing the letter $d$ before the symbol representing the quantity. Thus the differential of $x^2$ is written $d(x^2)$, the differential of $\sqrt{x}$ is written $d(\sqrt{x})$. The differential of $x^2$ or of $\sqrt{x}$ will of course depend on the differential of $x$ itself. Similarly $d(\sin \theta)$ will depend on $d\theta$, $d(\log_b x)$ will depend on $dx$ and also on the base $b$. When the differentials $d(x^2)$, $d(\sqrt{x})$, $d(\sin \theta)$ are known or expressions for them have been found then the rates of these quantities will be
+
+\[\frac{d(x^2)}{dt}, \frac{d(\sqrt{x})}{dt}, \frac{d(\sin \theta)}{dt}, \text{ etc.,}\]
+
+and will depend on the rates $\frac{dx}{dt}$, $\frac{d\theta}{dt}$, etc.
+
+Now, in mathematical problems, such expressions as $x^2$, $\sqrt{x}$, $\sin \theta$, $\log x$, $x+y$, $x-y$, $xy$, $x/y$, etc., are of regular and frequent occurrence. In order to study problems involving changing quantities which contain such expressions as the above, it is necessary to be able to find their differentials and rates.
+
+The finding or calculation of differentials is called differentiation and is one of the most important parts of the subject of calculus, that part of the subject which deals with differentiation and its applications being called the differential calculus.
+
+\section{Differential of a Variable with Constant Rate}
+If a point $P$ moves along a straight line with constant speed $k$ units per unit of time, then at any instant its rate is
+\[\frac{dx}{dt} = k \tag{2} \label{2}\]
+
+At this speed the point $P$ will, in the length of time $t$, move over a distance equal to $kt$, the speed multiplied by the time. If at the beginning of this time, the instant of starting, $P$ were already at a certain fixed distance $a$ from the reference point $O$, then at the end of the time $t$ the total distance is the sum
+\[x = a + kt \tag{3} \label{3}\]
+
+If $P$ starts at the same point and moves in the opposite (negative) direction, then the total distance after the time $t$ is the difference
+\[x = a - kt \tag{4} \label{4}\]
+and the rate is
+\[\frac{dx}{dt} = -k \tag{5} \label{5}\]
+
+The several equations \eqref{2} to \eqref{5} may be combined by saying that if
+\[x = a \pm kt, \frac{dx}{dt} = \pm k \tag{6} \label{6}\]
+
+Considering expressions \eqref{2} and \eqref{3}, since $x$ equals $a + kt$ then of course the rate of $x$ equals the rate of $a + kt$, that is, $\frac{dx}{dt} = \frac{d(a+kt)}{dt}$. But by \eqref{2} $\frac{dx}{dt} = k$, therefore
+\[\frac{d(a+kt)}{dt} = k \tag{7} \label{7}\]
+
+In the same manner from \eqref{4} and \eqref{5} we get
+\[\frac{d(a-kt)}{dt} = -k\]
+
+These results will be used in finding the differentials of other simple expressions. It is to be remembered that equation \eqref{3} is the expression for the value of any variable $x$ (in this case a distance) at any time $t$ when its rate is constant, and that \eqref{7} gives the value of this rate in terms of the right side of \eqref{3}, which is equal to the variable $x$.
+
+\section{Differential of a Sum or Difference of Variables}
+We can arrive at an expression for the differential of a sum or difference of two or more variables in an intuitive way by noting that since the sum is made up of the parts which are the several variables, then, if each of the parts changes by a certain amount which is expressed as its differential, the change in the sum, which is its differential, will of course be the sum of the changes in the separate parts, that is, the sum of the several differentials of the parts.
+
+In order to get an exact and logical expression for this differential, however, it is better to base it on the precise results established in the preceding article, which are natural and easily understood, as well as being mathematically correct.
+
+Thus let $k$ denote the rate of any variable quantity $x$ (distance or any other quantity), and $k'$ the rate of another variable $y$. Then, as in the example of the last article, we can write, as in equation \eqref{3},
+\[x = a + kt \]
+and also
+\[y = b + k't\]
+the numbers $a$ and $b$ being the constant initial values of $x$ and $y$. Adding these two equations member by member we get
+\[x + y = a + b + kt + k't\]
+\[(x + y) = (a + b) + (k + k')t\]
+
+Now, this equation is of the same form as equation \eqref{3}, $(x + y)$ replacing $x$ and $(a + b)$, $(k + k')$ replacing $a$, $k$, respectively. As in \eqref{2} and \eqref{7}, therefore,
+\[\frac{d(x+y)}{dt} = (k + k')\]
+
+But $k$ is the rate of $x$, $dx/dt$, and $k'$ is the rate of $y$, $dy/dt$. Therefore
+\[\frac{d(x+y)}{dt} = \frac{dx}{dt} + \frac{dy}{dt}\]
+
+Multiplying both sides of this equation by $dt$ in order to have differentials instead of rates, there results
+\[d(x+y) = dx + dy \tag{8} \label{8}\]
+
+If instead of adding the two equations above we had subtracted the second from the first, we would have obtained instead of \eqref{8} the result
+\[d(x-y) = dx - dy\]
+
+This result and \eqref{8} may be combined into one by writing
+\[d(x \pm y) = dx \pm dy \tag{9} \label{9}\]
+
+In the same way three or more equations such as \eqref{3} above might be written for three or more variables $x$, $y$, $z$, etc., and we would obtain instead of \eqref{9} the result
+\[d(x \pm y \pm z \pm \cdots) = dx \pm dy \pm dz \pm \cdots \tag{A} \label{A}\]
+the dots meaning "and so on" for as many variables as there may be.
+
+We shall find that formula \eqref{A} in which $x$, $y$, $z$, etc., may be any single variables or other algebraic terms is of fundamental importance and very frequent use in the differential calculus.
+
+\section{Differential of a Constant and of a Negative Variable}
+Since a constant is a quantity which does not change, it has no rate or differential, or otherwise expressed, its rate or differential is zero. That is, if $c$ is a constant
+\[dc = 0 \tag{B} \label{B}\]
+
+Then, in an expression like $x + c$, since $c$ does not change, any change in the value of the entire expression must be due simply to the change in the variable $x$, that is, the differential of $x + c$ is equal simply to that of $x$ and we write
+\[d(x + c) = dx \tag{C} \label{C}\]
+
+This might also have been derived from \eqref{8} or \eqref{9}. Thus,
+\[d(x \pm c) = dx \pm dc\]
+but by \eqref{B} $dc = 0$ and, therefore, $d(x \pm c) = dx$
+which is the same as \eqref{C}, either the plus or minus sign applying in \eqref{C}.
+
+Consider the expression
+$y = -x$; then $y + x = 0$
+and
+$d(y + x) = d(0)$,
+but zero does not change and therefore $d(0) = 0$. Therefore,
+$d(y + x) = dy + dx = 0$, or $dy = -dx$.
+But $y = -x$; therefore,
+\[d(-x) = -dx \tag{D} \label{D}\]
+
+\section{Differential of the Product of a Constant and a Variable}
+Let us refer now to formula \eqref{A} and suppose all the terms to be the same; then
+\[d(x + x + x + \cdots) = dx + dx + dx + \cdots\]
+If there are $m$ such terms, with $m$ constant, then the sum of the terms is $mx$ and the sum of the differentials is $m\,dx$. Therefore,
+\[d(mx) = mdx \tag{E} \label{E}\]
+
+Since we might have used either the plus or minus sign in \eqref{A} we may write \eqref{E} with either $+m$ or $-m$. In general, \eqref{E} holds good for any constant $m$, positive or negative, whole, fractional or mixed, and regardless of the form of the variable which is here represented by $x$.
+

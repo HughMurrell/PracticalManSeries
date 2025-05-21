@@ -1,0 +1,359 @@
+\chapter{DIFFERENTIALS OF ALGEBRAIC FUNCTIONS}
+
+\section{Introduction}
+In the preceding chapter we saw that in order to find the derivative of a function we must first find its differential, and in Chapter I we saw that in order to find the rate of a varying quantity, we must also first find its differential. We then found the differentials of a few simple but important forms of expressions. These will be useful in deriving formulas for other differentials and are listed here for reference.
+
+\[d(x \pm y \pm z \pm \cdots) = dx \pm dy \pm dz \pm \cdots \tag{A} \label{A}\]
+\[dc = 0 \tag{B} \label{B}\]
+\[d(x + c) = dx \tag{C} \label{C}\]
+\[d(-x) = -dx \tag{D} \label{D}\]
+\[d(mx) = m\,dx \tag{E} \label{E}\]
+
+In Chapter I we found that when we have given a certain function of an independent variable, the derivative of the function can be obtained by expressing the differential of the function in terms of the independent variable and its differential, and then dividing by the differential of the independent variable. We now proceed to find the differentials of the fundamental algebraic functions, and it is convenient to begin with the square of a variable.
+
+\section{Differential of the Square of a Variable}
+In order to find this differential let us consider the expression $mx$ of formula \eqref{E}, and let
+\[m = x, \text{ then } z = mx = x^2\]
+
+by squaring; $z$ being the dependent variable and $m$ being a constant. Differentiating these two equations by formula \eqref{E},
+\[dz = m\,dx, \quad d(z^2) = m^2\,d(x^2),\]
+and dividing the second of these results by the first, member by member,
+\[\frac{d(z^2)}{dz} = m \frac{d(x^2)}{dx}\]
+
+Dividing this result by the original equation $z = m$ to eliminate the constant $m$ there results
+\[\frac{1}{z}\frac{d(z^2)}{dz} = \frac{1}{x}\frac{d(x^2)}{dx} \tag{19} \label{19}\]
+
+Now, $d(x^2)/dx$ is the derivative of $x^2$, and similarly for $z^2$. Furthermore, the connecting constant $m$ has been eliminated and has no bearing on the equation (19). This equation therefore tells us that the derivative of the square of a variable divided by the variable itself (multiplied by the reciprocal) is the same for any two variables $x$ and $z$. It is, therefore, the same for all variables and has a fixed, constant value, say $a$. Then,
+\[\frac{1}{x}\frac{d(x^2)}{dx} = a\]
+\[\therefore d(x^2) = ax\,dx \tag{20} \label{20}\]
+
+In order to know the value of $d(x^2)$, therefore, we must determine the constant $a$. This is done as follows:
+
+Since equation \eqref{20} is true for the square of any variable, it is true for $(x + c)$ where $c$ is a constant. Therefore,
+\[d[(x+c)^2] = a(x+c)\,d(x+c)\]
+
+But, by formula \eqref{C}, $d(x+c) = dx$, hence,
+\[d[(x+c)^2] = a(x+c)\,dx = ax\,dx + ac\,dx\]
+
+Also, according to equation \eqref{21},
+\[d[(x+c)^2] = d(x^2) + 2c\,dx \tag{21} \label{21}\]
+\[= ax\,dx + 2c\,dx \tag{22} \label{22}\]
+by \eqref{20}. By \eqref{21} and \eqref{22}, therefore,
+\[ac\,dx = 2c\,dx \therefore a = 2\]
+
+and this value of $a$ in \eqref{20} gives, finally,
+\[d(x^2) = 2x\,dx \tag{F} \label{F}\]
+
+This is the differential of $x^2$; dividing by $dx$ the derivative of $x^2$ with respect to $x$ is
+\[\frac{d(x^2)}{dx} = 2x \tag{23} \label{23}\]
+
+These important results can be stated in words by saying that, "the differential of the square of any variable equals twice the variable times its differential," and, "the derivative of the square of any variable with respect to the variable equals twice the variable."
+
+Referring to article 11, formula \eqref{F} corresponds to equation (17) and \eqref{23} to equation (16) when $f(x) = x^2$, and therefore $f'(x) = 2x$.
+
+\section{Differential of the Square Root of a Variable}
+Let $x$ be the variable and let
+\[y = \sqrt{x}, \text{ then } y^2 = x\]
+
+Differentiating the second equation by formula \eqref{F},
+\[2y\,dy = dx, \text{ or } dy = \frac{dx}{2y}\]
+
+But $y = \sqrt{x}$, therefore,
+\[d(\sqrt{x}) = \frac{1}{2}x^{-\frac{1}{2}}\,dx \tag{G} \label{G}\]
+
+and the derivative is
+\[\frac{d(\sqrt{x})}{dx} = \frac{1}{2}x^{-\frac{1}{2}} \tag{24} \label{24}\]
+
+Formula \eqref{G} can be put in a somewhat different form which is sometimes useful. Thus, $\sqrt{x} = x^{1/2}$ and
+\[d(x^{1/2}) = \frac{1}{2}x^{-1/2}\,dx \tag{25} \label{25}\]
+
+\section{Differential of the Product of Two Variables}
+Let $x$ and $y$ be the two variables. We then wish to find $d(xy)$. Since we already have a formula for the differential of a square we first express the product $xy$ in terms of squares. We do this by writing
+\[(x+y)^2 = x^2 + 2xy + y^2\]
+
+Transposing and dividing by 2, this gives,
+\[xy = \frac{1}{2}(x+y)^2 - \frac{1}{2}x^2 - \frac{1}{2}y^2\]
+
+Differentiating this equation and using formula \eqref{A} on the right,
+\[d(xy) = d[\frac{1}{2}(x+y)^2] - d(\frac{1}{2}x^2) - d(\frac{1}{2}y^2)\]
+
+Applying formula \eqref{F} to each of the squares on the right and handling the constant coefficients by formula \eqref{E} we get
+\[d(xy) = \frac{1}{2}(x + y)\,d(x + y) - \frac{1}{2}x\,dx - \frac{1}{2}y\,dy\]
+\[= (x+y)(dx+dy) - x\,dx - y\,dy\]
+\[= x\,dx + x\,dy + y\,dx + y\,dy - x\,dx - y\,dy\]
+\[\therefore d(xy) = x\,dy + y\,dx \tag{H} \label{H}\]
+
+A simple application of this formula gives the differential of the reciprocal of a variable. Let $x$ be the variable and let
+\[y = \frac{1}{x}, \text{ then } xy = 1\]
+
+Differentiating the second equation by formula \eqref{H}, and remembering that by formula \eqref{B} $d(1) = 0$, we get,
+\[x\,dy + y\,dx = 0, \text{ hence, } dy = -y\,dx\]
+
+But, $y = \frac{1}{x}$, therefore,
+\[d(\frac{1}{x}) = -\frac{1}{x^2}\,dx \tag{J} \label{J}\]
+
+is the differential, and the derivative with respect to $x$ is
+\[\frac{d(1/x)}{dx} = -\frac{1}{x^2} \tag{26} \label{26}\]
+
+Formula \eqref{J} can be put into a different form which is often useful. Thus, $1/x = x^{-1}$ and $1/x^2 = x^{-2}$; hence, (J) becomes
+\[d(x^{-1}) = -x^{-2}\,dx \tag{27} \label{27}\]
+
+\section{Differential of the Quotient of Two Variables}
+Let $x$, $y$ be the variables; we wish to find $d(x/y)$. Now, we can write $x/y$ as
+\[(1/y)\cdot x\]
+
+which is in the form of a product. Applying formulas \eqref{H} and \eqref{J} to this product, we get
+\[d(\frac{x}{y}) = \frac{1}{y}\,dx + x\,d(\frac{1}{y}) = \frac{1}{y}\,dx - \frac{x}{y^2}\,dy\]
+
+or, combining these two last terms with a common denominator,
+\[d(\frac{x}{y}) = \frac{y\,dx - x\,dy}{y^2} \tag{K} \label{K}\]
+
+\section{Differential of a Power of a Variable}
+Letting $x$ represent the variable and $r$ represent any constant exponent, we have to find $d(x^r)$. Since a power is the product of repeated multiplication of the same factors, for example, $2^3 = 2\cdot2\cdot2$, $x^3 = x\cdot x\cdot x$, etc., let us consider formula \eqref{H}:
+\[d(xy) = x\,dy + y\,dx\]
+
+Then
+\[d(xyz) = d[(xy)z] = xy\,dz + z\,d(xy)\]
+\[= xy\,dz + z(y\,dx + x\,dy) = xy\,dz + yz\,dx + xz\,dy\]
+
+Similarly,
+\[d(xyzt) = (xyz)\,dt + (xyt)\,dz + (xzt)\,dy + (yzt)\,dx\]
+
+Extended to the product of any number of factors, this formula says, "To find the differential of the product of any number of factors multiply the differential of each factor by the product of all the other factors and add the results."
+
+Thus,
+\[d(x^3) = d(x\cdot x\cdot x) = x\cdot x\,dx + x\cdot x\,dx + x\cdot x\,dx = 3x^2\,dx = 3x^{3-1}\,dx\]
+
+In the same way
+\[d(x^4) = d(x\cdot x\cdot x\cdot x) = 4x^3\,dx = 4x^{4-1}\,dx\]
+\[d(x^5) = 5x^4\,dx = 5x^{5-1}\,dx\]
+
+and, in general, by extending the same method to any power,
+\[d(x^n) = nx^{n-1}\,dx \tag{L} \label{L}\]
+
+If $y = x^n$ the derivative is
+\[\frac{dy}{dx} = \frac{d(x^n)}{dx} = nx^{n-1} \tag{28} \label{28}\]
+
+Referring now to formulas \eqref{F}, \eqref{25}, \eqref{27} it is seen that they are simply special cases of the general formula \eqref{L} with the exponent $n = 2$, $\frac{1}{2}$, $-1$, respectively. Formula \eqref{L} holds good for any value of the exponent, positive, negative, whole number, fractional or mixed.
+
+\section{Formulas}
+The formulas derived in this chapter are collected here for reference in connection with the illustrative examples worked out in the next article.
+
+\begin{align*}
+d(x^2) &= 2x\,dx \tag{F} \label{F} \\[1em]
+d(\sqrt{x}) &= \frac{1}{2\sqrt{x}}\,dx \tag{G} \label{G} \\[1em]
+d(xy) &= x\,dy + y\,dx \tag{H} \label{H} \\[1em]
+d(\frac{1}{x}) &= -\frac{1}{x^2}\,dx \tag{J} \label{J} \\[1em]
+d(\frac{x}{y}) &= \frac{y\,dx - x\,dy}{y^2} \tag{K} \label{K} \\[1em]
+d(x^n) &= nx^{n-1}\,dx \tag{L} \label{L}
+\end{align*}
+
+\section{Illustrative Examples}
+
+\subsection*{Example 1}
+Find the differential of $x^2 - 2x + 3$.
+
+This is the algebraic sum of several terms, therefore by formula \eqref{A} we get for the differential of the entire expression
+\[d(x^2) - d(2x) + d(3)\]
+
+By formula \eqref{F}, \[d(x^2) = 2x\,dx\]
+By formula \eqref{E}, \[d(2x) = 2\,dx\]
+By formula \eqref{B}, \[d(3) = 0\]
+
+Therefore
+\[d(x^2 - 2x + 3) = 2x\,dx - 2\,dx\]
+
+\subsection*{Example 2}
+Find $d(2x^3 + 3\sqrt{x} - 3x^2)$
+
+By formula \eqref{A} this is equal to $d(2x^3) + d(3\sqrt{x}) - d(3x^2)$
+
+By \eqref{E} and \eqref{L},
+\[d(2x^3) = 2d(x^3) = 2(3x^2\,dx) = 6x^2\,dx\]
+
+By \eqref{E} and \eqref{G},
+\[d(3\sqrt{x}) = 3d(\sqrt{x}) = 3\frac{dx}{2\sqrt{x}} = \frac{3\,dx}{2\sqrt{x}}\]
+
+By \eqref{E} and \eqref{L}
+\[d(3x^2) = 3d(x^2) = 3(2x\,dx) = 6x\,dx\]
+
+Therefore the required differential is
+\[6x^2\,dx + \frac{3\,dx}{2\sqrt{x}} - 6x\,dx = (6x^2 + \frac{3}{2\sqrt{x}} - 6x)\,dx\]
+
+\subsection*{Example 3}
+Differentiate $3xy^2$.
+
+This is the product of $x$ by $y^2$ with the constant coefficient 3; therefore by formulas \eqref{E} and \eqref{H} we have
+\[d(3xy^2) = 3d(x\cdot y^2)\]
+and
+\[d(x\cdot y^2) = x\cdot d(y^2) + y^2\cdot d(x) = x\cdot 2y\,dy + y^2\cdot dx = 2xy\,dy + y^2\,dx\]
+
+Therefore
+\[d(3xy^2) = 3(2xy\,dy + y^2\,dx) = 3y(2x\,dy + y\,dx)\]
+
+\subsection*{Example 4}
+Differentiate $\sqrt{x^2 - 4}$
+
+By \eqref{G},
+\[d\sqrt{x^2 - 4} = \frac{d(x^2-4)}{2\sqrt{x^2-4}}\]
+and by \eqref{C} and \eqref{F},
+\[d(x^2-4) = d(x^2) = 2x\,dx\]
+
+Therefore,
+\[d\sqrt{x^2 - 4} = \frac{2x\,dx}{2\sqrt{x^2-4}} = \frac{x\,dx}{\sqrt{x^2-4}}\]
+
+\subsection*{Example 5}
+Differentiate $\frac{u^2}{y}$
+
+This is a quotient; therefore, by \eqref{K},
+\[d(\frac{u^2}{y}) = \frac{y\cdot d(u^2) - u^2\cdot d(y)}{y^2}\]
+\[= \frac{y\cdot 2u\,du - u^2\,dy}{y^2}\]
+
+\subsection*{Example 6}
+Differentiate $(x+2)\sqrt{x^2+4x}$
+
+This is the product of the factors $x+2$ and $\sqrt{x^2+4x}$. Therefore, by formula \eqref{H},
+\[d[(x+2)\sqrt{x^2+4x}] = (x+2)\cdot d(\sqrt{x^2+4x}) + \sqrt{x^2+4x}\cdot d(x+2) \tag{a} \label{a}\]
+
+By formula \eqref{G},
+\[d(\sqrt{x^2+4x}) = \frac{d(x^2+4x)}{2\sqrt{x^2+4x}}\]
+and
+\[d(x^2+4x) = d(x^2) + d(4x) = 2x\,dx + 4\,dx = 2(x+2)\,dx\]
+
+Therefore,
+\[d(\sqrt{x^2+4x}) = \frac{2(x+2)\,dx}{2\sqrt{x^2+4x}} = \frac{(x+2)\,dx}{\sqrt{x^2+4x}} \tag{b} \label{b}\]
+
+Also
+\[\sqrt{x^2+4x}\cdot d(x+2) = \sqrt{x^2+4x}\cdot dx \tag{c} \label{c}\]
+
+Using the results (b) and (c) in expression (a),
+\[d[(x+2)\sqrt{x^2+4x}] = (x+2)\cdot\frac{(x+2)\,dx}{\sqrt{x^2+4x}} + \sqrt{x^2+4x}\cdot dx\]
+\[= \frac{(x+2)^2\,dx + (x^2+4x)\cdot dx}{\sqrt{x^2+4x}}\]
+
+This can be simplified, if desired, by writing the two expressions in brackets over the common denominator $\sqrt{x^2+4x}$. This gives,
+\[\frac{(x+2)^2 + (x^2+4x)\sqrt{x^2+4x}}{\sqrt{x^2+4x}}\]
+
+Simplifying this last expression we get finally
+\[(x+2)\sqrt{x^2+4x} = 2(x^2+4x+2)\,dx\]
+
+\subsection*{Example 7}
+Differentiate $\frac{x+y}{x-y}$
+
+This is the quotient of $(x+y)$ by $(x-y)$; therefore, by \eqref{K}
+\[d(\frac{x+y}{x-y}) = \frac{(x-y)\cdot d(x+y) - (x+y)\cdot d(x-y)}{(x-y)^2}\]
+\[= \frac{(x-y)(dx+dy)-(x+y)(dx-dy)}{(x-y)^2}\]
+
+Now, by multiplication
+\[(x-y)(dx+dy) - (x+y)(dx-dy)\]
+equals
+\[x\,dx + x\,dy - y\,dx - y\,dy - x\,dx + x\,dy - y\,dx + y\,dy\]
+\[= x\,dx + x\,dy - y\,dx - y\,dy - x\,dx + x\,dy - y\,dx + y\,dy\]
+\[= 2x\,dy - 2y\,dx = 2(x\,dy - y\,dx)\]
+
+Therefore,
+\[d(\frac{x+y}{x-y}) = \frac{2(x\,dy - y\,dx)}{(x-y)^2}\]
+
+\subsection*{Example 8}
+Differentiate $3x^{\frac{1}{2}}$
+
+\[d(3x^{\frac{1}{2}}) = 3d(x^{\frac{1}{2}})\]
+and by \eqref{E}
+\[d(x^{\frac{1}{2}}) = \frac{1}{2}x^{-\frac{1}{2}}\,dx = \frac{1}{2\sqrt{x}}\,dx\]
+
+Therefore,
+\[d(3x^{\frac{1}{2}}) = 3\cdot\frac{1}{2\sqrt{x}}\,dx = \frac{3}{2\sqrt{x}}\,dx\]
+
+\subsection*{Example 9}
+Find the differential of $(x^2+2)^3$
+
+This is a variable $(x^2+2)$ raised to the power 3. Hence by \eqref{L}
+\[d[(x^2+2)^3] = 3(x^2+2)^2\cdot d(x^2+2) = 3(x^2+2)^2\cdot d(x^2)\]
+\[= 3(x^2+2)^2\cdot 2x\,dx = 6x(x^2+2)^2\,dx\]
+
+\subsection*{Example 10}
+Find $d[(x^2+1)^3(x^2+1)^{\frac{1}{2}}]$
+
+This is a product of two factors and each factor is a power of a variable. Therefore, by formula \eqref{H}
+\[d[(x^2+1)^3(x^2+1)^{\frac{1}{2}}] = (x^2+1)^3\cdot d[(x^2+1)^{\frac{1}{2}}] + (x^2+1)^{\frac{1}{2}}\cdot d[(x^2+1)^3] \tag{a} \label{a}\]
+
+Also, by formula \eqref{L},
+\[d[(x^2+1)^{\frac{1}{2}}] = \frac{1}{2}(x^2+1)^{-\frac{1}{2}}\cdot d(x^2+1) = \frac{1}{2}(x^2+1)^{-\frac{1}{2}}\cdot d(x^2)\]
+\[= \frac{1}{2}(x^2+1)^{-\frac{1}{2}}\cdot 2x\,dx = \frac{x\,dx}{\sqrt{x^2+1}} \tag{b} \label{b}\]
+
+and
+\[d[(x^2+1)^3] = 3(x^2+1)^2\cdot d(x^2+1) = 3(x^2+1)^2\cdot d(x^2)\]
+\[= 3(x^2+1)^2\cdot 2x\,dx = 6x(x^2+1)^2\,dx \tag{c} \label{c}\]
+
+Using the results (b) and (c) in (a), we get
+\[d[(x^2+1)^3(x^2+1)^{\frac{1}{2}}] = (x^2+1)^3\cdot\frac{x\,dx}{\sqrt{x^2+1}} + (x^2+1)^{\frac{1}{2}}\cdot 6x(x^2+1)^2\,dx\]
+
+By carrying out the indicated multiplications and factoring the resulting expression as follows we get:
+\[6x^2(x^2+1)^2(x^2+1)^{\frac{1}{2}}\,dx + 6x(x^2+1)^3(x^2+1)^{\frac{1}{2}}\,dx\]
+\[= 6x(x^2+1)^2(x^2+1)^{\frac{1}{2}}[x + (x^2+1)]\,dx\]
+
+Therefore, finally the required differential becomes
+\[d[(x^2+1)^3(x^2+1)^{\frac{1}{2}}] = 6x(x^2+1)^2(x^2+1)^{\frac{1}{2}}(x^3+x+1)\,dx\]
+
+\subsection*{Example 11}
+Differentiate $\frac{2}{x^2 + 2}$
+
+This is the same as $2\cdot\frac{1}{x^2 + 2}$. Therefore by formula \eqref{J}
+\[d(\frac{2}{x^2 + 2}) = 2\cdot d(\frac{1}{x^2 + 2}) = -2\cdot\frac{d(x^2 + 2)}{(x^2 + 2)^2}\]
+\[= -2\cdot\frac{2x\,dx}{(x^2 + 2)^2} = -\frac{4x\,dx}{(x^2 + 2)^2}\]
+
+\subsection*{Example 12}
+Differentiate $3(y+3)^{-\frac{1}{2}}$
+
+This is the same as
+\[3\cdot\frac{1}{\sqrt{y+3}} = 3(y+3)^{-\frac{1}{2}}\]
+
+Therefore by formula \eqref{L}
+\[d[3(y+3)^{-\frac{1}{2}}] = 3\cdot[-\frac{1}{2}(y+3)^{-\frac{3}{2}}\cdot d(y+3)]\]
+\[= 3\cdot[-\frac{1}{2}(y+3)^{-\frac{3}{2}}\cdot dy] = -\frac{3\,dy}{2(y+3)^{\frac{3}{2}}}\]
+
+\clearpage  % Force a new page
+
+section*{Exercises}
+\addcontentsline{toc}{subsection}{Exercises}
+
+Differentiate each of the following expressions:
+
+1. $x^2 - 2x + \sqrt{x}$
+
+2. $x^3 - x^{\frac{3}{5}} + x$
+
+3. $8x^6 + 3x^{\frac{1}{2}} + 10x^{\frac{5}{8}} + 2x + 2$
+
+4. $(x - 3x)^{\frac{1}{2}}$
+
+5. $(4 - 2x)^{\frac{1}{2}}$
+
+6. $\frac{x}{y}$
+
+7. $\frac{1}{x^2} - 2$
+
+8. $\frac{x^2 + 5}{x}$
+
+9. $\frac{x^4 - 4\sqrt{1+6x}}{\sqrt{1+x}}$
+
+10. $(x+3)^3 - 2y + y^2$
+
+11. $(\sqrt{x} + y)^2$
+
+12. $\frac{3-x}{x}$
+
+13. $5x^{\frac{1}{7}} + 6$
+
+14. $4x^{-1} - 7x^{-2}$
+
+15. $6x^{\frac{1}{2}} - 9x^{\frac{1}{3}}$
+
+16. $2\sqrt{x} - 12\sqrt[3]{x}$
+
+17. $\sqrt[3]{3+4x}$
+
+18. $\sqrt[4]{4-3x}$
+
+19. $\frac{1}{x^n}$, ($n$ is a constant)
+
+20. $\frac{A}{x^n}$, ($A$ and $n$ are constants)

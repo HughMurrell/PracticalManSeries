@@ -1,0 +1,105 @@
+% chapter 2 of calculus for the practical man
+
+\chapter{FUNCTIONS AND DERIVATIVES}
+
+\section{Meaning of a Function}
+Meaning of a Function.-In the solution of problems in algebra and trigonometry one of the important steps is the expression of one quantity in terms of another. The unknown quantity is found as soon as an equation or formula can be written which contains the unknown quantity on one side of the equation and only known quantities on the other. Even though the equation does not give the unknown quantity explicitly, if any relation can be found connecting the known and unknown quantities it can frequently be solved or transformed in such a way that the unknown can be found if sufficient data are given.
+
+Even though the data may not be given so as to calculate the numerical value of the unknown, if the connecting relation can be found the problem is said to be solved. Thus, consider a right triangle having legs $x$, $y$ and hypotenuse $c$ and suppose the hypotenuse to retain the same value ($c$ constant) while the legs are allowed to take on different consistent values ($x$ and $y$ variable). Then, to every different value of one of the legs there corresponds a definite value of the other leg. Thus if $x$ is given a particular length consistent with the value of $c$, $y$ can be determined. This is done as follows: The relation between the three quantities $x$, $y$, $c$ is first formulated. For the right triangle, this is,
+\[x^2 + y^2 = c^2 \tag{10} \label{10}\]
+
+Considering this as an algebraic equation, in order to determine $y$ when a value is assigned to $x$ the equation is to be solved for $y$ in terms of $x$ and the constant $c$. This gives
+\[y = \sqrt{c^2 - x^2} \tag{11} \label{11}\]
+
+In this expression, whenever $x$ is given, $y$ is determined and to every value of $x$ there corresponds a value of $y$ whether it be numerically calculated or not. The variable $y$ is said to be a function of the variable $x$. The latter is called the independent variable and $y$ is called the dependent variable. We can then in general define a function by saying that,
+
+If when $x$ is given, $y$ is determined, $y$ is a function of $x$.
+
+Examples of functions occur on every hand in algebra, trigonometry, mechanics, electricity, etc. Thus, in equation \eqref{2}, $x$ is a function of $t$; if $y = g(x)$ or $y = x^2$, $y$ is a function of $x$. If in the right triangle discussed above, $	heta$ be the angle opposite the side $y$, then, from trigonometry, $y = c \sin \theta$ and with $c$ constant $y$ is a function of $\theta$. Also the trigonometric or angle functions sine, cosine, tangent, etc., are functions of their angle; thus $\sin \theta$, $\cos \theta$, $\tan \theta$ are determined as soon as the value of $\theta$ is given.
+
+In the mechanics of falling bodies, if a body falls freely from a position of rest then at any time $t$ seconds after it begins to fall it has covered a space $s = 16t^2$ feet and $s$ is a function of $t$; also when it has fallen through a space $s$ feet it has attained a speed of $v = 8\sqrt{s}$ feet per second, and $v$ is a function of $s$. If a variable resistance $R$ ohms is inserted in series with a constant electromotive force $E$ volts the electric current $I$ in amperes will vary as $R$ is varied and according to Ohm's Law of the electric circuit is given by the formula $I = E/R$; the current is a function of the resistance.
+
+In general, the study and formulation of relations between quantities which may have any consistent value is a matter of functional relations and when one quantity is expressed by an equation or formula as a function of the other or others the problem is solved. The numerical value of the dependent variable can then by means of the functional expression be calculated as soon as numerical values are known for the independent variable or variables and constants.
+
+In order to state that one quantity $y$ is a function of another quantity $x$ we write $y = f(x)$, $y = f'(x)$, $y = F(x)$, etc., each symbol expressing a different form of function. Thus, in equation \eqref{11} above we can say that $y = f(x)$, and similarly in some of the other relations given, $s = F(t)$, $I = \phi(R)$, etc.
+
+If in \eqref{11} both $x$ and $c$ are variables, then values of both $x$ and $c$ must be given in order that $y$ may be determined, and $y$ is a function of both $x$ and $c$. This is expressed by writing $y = f(x,c)$. If in Ohm's Law both $E$ and $R$ are variable, then both must be specified before $I$ can be calculated and $I$ is a function of both, $I = \phi(E,R)$.
+
+In \eqref{11} where $y = \sqrt{c^2 - x^2}$ we can also find $x = \sqrt{c^2 - y^2}$ and
+$x$ is an inverse function of $y$; similarly if $x = \sin \theta$ then $\theta = \sin^{-1} x$ (read "anti-sine" or "angle whose sine is") is the inverse function. In general if $y$ is a function of $x$ then $x$ is the inverse function of $y$, and so for any two variables.
+
+\section{Classification of Functions}
+Functions are named or classified according to their form, origin, method of formation, etc. Thus the sine, cosine, tangent, etc., are called the trigonometric or angular (angle) functions. Functions such as $x^2$, $\sqrt{x}$, $x^2 + \sqrt{x}$, $3\sqrt{x} - 2/x$, formed by using only the fundamental algebraic operations (addition, subtraction, multiplication, division, involution, evolution) are called algebraic functions. A function such as $b^x$, where $b$ is a constant and $x$ variable, is called an exponential function of $x$ and $\log_b x$ is a logarithmic function of $x$.
+
+In order to distinguish them from the algebraic functions the trigonometric, exponential and logarithmic functions and certain combinations of these are called transcendental functions. We shall find in a later chapter that transcendental functions are of great importance in both pure and applied mathematics.
+
+Another classification of functions is based on a comparison of equations \eqref{10} and \eqref{11}. In \eqref{11} $y$ is given explicitly as a function of $x$ and is said to be an explicit function of $x$. In \eqref{10} if $x$ is taken as independent variable then $y$ can be found but as the equation stands the value of $y$ is not given directly and $y$ is said to be an implicit function of $x$.
+
+Explicit or implicit functions may be algebraic or transcendental.
+
+\section{Differential of a Function of an Independent Variable}
+If $y$ is a function of $x$, written $y = f(x)$,
+\begin{equation}
+\label{12}
+y = f(x)
+\tag{12}
+\end{equation}
+then, since a given value of $x$ will determine the corresponding value of $y$, the rate of $y$, $dy/dt$, will depend on both $x$ and the rate $dx/dt$ at any particular instant. Similarly, for the same value of $dt$, $dy$ will depend on both $x$ and $dx$.
+
+To differentiate a function is to express its differential in terms of both the independent variable and the differential of the independent variable. Thus, in the case of the function \eqref{12} $dy$ will be a function of both $x$ and $dx$.
+
+If two expressions or quantities are always equal, their rates taken at the same time must evidently be equal and so also their differentials. An equation can, therefore, be differentiated by finding the differentials of its two members and equating them. Thus from the equation
+\[
+(x + c)^2 = x^2 + 2cx + c^2
+\]
+by differentiating both sides and using formula (A) on the right side. Since $c$, $c$ and $2$ are constants, then by formulas (B) and (E) $d(2cx) = 2c\,dx$ and $d(c^2) = 0$. Therefore,
+\[
+d[(x+c)^2] = d(x^2) + 2c\,dx
+\tag{13}
+\label{13}
+\]
+Thus, if the function $(x+c)^2$ is expressed as
+\[
+y = (x+c)^2 \implies dy = d(x^2) + 2c\,dx
+\tag{13a}
+\label{13a}
+\]
+and, dividing by $dt$, the relation between the rates is
+\[
+\frac{dy}{dt} = \frac{d(x^2)}{dt} + 2c \frac{dx}{dt}
+\tag{13b}
+\label{13b}
+\]
+From equation \eqref{13a} we can express $dy$ in terms of $x$ and $dx$ when we can express $d(x^2)$ in terms of $x$ and $dx$. This we shall do presently.
+
+\section{The Derivative of a Function}
+If $y$ is any function of $x$, as in equation \eqref{12},
+\[y = f(x) \tag{12} \label{12}\]
+then, as seen above, the rate or differential of $y$ will depend on the rate or differential of $x$ and also on $x$ itself. There is, however, another important function of $x$ which can be derived from $y$ which does not depend on $dx$ or $dx/dt$ but only on $x$. This is true for any ordinary function whatever and will be proven for the general form \eqref{12} once for all. The demonstration is somewhat formal, but in view of the definiteness and exactness of the result it is better to give it in mathematical form rather than by means of a descriptive and intuitive form.
+
+In order to determine the value of $y$ in the functional equation \eqref{12}, let the independent variable $x$ have a particular value $a$ at a particular instant and let $dx$ be purely arbitrary, that is, chosen at will. Then, even though $dx$ is arbitrary, so also is $dt$, and, therefore, the rate $dx/dt$ can be given any chosen definite, fixed value at the instant when $x = a$. Let this fixed value of the rate be
+\[\frac{dx}{dt} = k' \tag{14} \label{14}\]
+The corresponding rate of $y$ will evidently depend on the particular form of the function $f(x)$, as, for example, if the function is $(x+c)^2$ the rate $dy/dt$ is given by equation \eqref{13b}. Therefore, when $dx/dt$ is definitely fixed, so also is $dy/dt$.
+Let this value be represented by
+\[\frac{dy}{dt} = k'' \tag{15} \label{15}\]
+Now, since both rates are fixed and definite, so also will be their ratio. Let this ratio be represented by $k$. Then, from \eqref{14} and \eqref{15},
+\[\frac{dy/dt}{dx/dt} = \frac{k''}{k'} = k\]
+Now, $(dy/dt) \div (dx/dt) = dy/dx$ and, therefore,
+\[\frac{dy}{dx} = k \]
+Since $k$ is definite and fixed, while $dx$ may have any arbitrary value, then $k$ cannot depend on $dx$. That is, the quantity $dy/dx$, which is equal to $k$, cannot depend on $dx$. It must depend on $x$ alone, that is, $dy/dx$ is a function of $x$. In general, it is a new function of $x$ different from the original function $f(x)$ from which it was derived. This derived function is denoted by $f'(x)$. We write, then
+\[\frac{dy}{dx} = f'(x) \tag{16} \label{16}\]
+This new function is called the derivative of the original function $f(x)$.
+
+Since \eqref{16} can also be written as
+\[dy =f'(x) \cdot dx \tag{17} \label{17}\]
+in which the differential of the dependent variable is equal to the product of the derivative by the differential of the independent variable, the derivative is also sometimes called the differential coefficient of $y$ regarded as a function of $x$.
+
+There are thus several ways of viewing the function which we have called the derivative. If we are thinking of a function $f(x)$ as a mathematical expression in any form, then the derivative is thought of as the derived function. If we refer particularly to the dependent variable $y$ as an explicit function of the independent variable $x$, then we express the derivative as $dy/dx$ (read "dy by dx") and refer to it as the "derivative of $y$ with respect to $x$."
+
+The derivative was first found, however, as the ratio of the rates of dependent and independent variables, from equations \eqref{14} and \eqref{15}, and this is its proper definition. Using this definition, that is, $(dy/dt) \div (dx/dt) = f'(x)$, we have
+\[\frac{dy}{dt} = f'(x) \frac{dx}{dt} \tag{18} \label{18}\]
+and for use in practical problems involving varying quantities this is the most useful way of viewing it. Based on this definition, equation \eqref{18} tells us that when we once have an equation expressing one variable as a function of another, the derivative is the function or quantity by which the rate of the independent variable must be multiplied in order to obtain the rate of the dependent variable.
+
+A geometrical interpretation of this important function as applied to graphs will be given later.
+
+In order to find this important function in any particular case equation \eqref{16} tells us that we must find the differential of the dependent variable and divide it by the differential of the independent variable. In the next chapter we take up the important matter of finding the differentials and derivatives of some fundamental algebraic functions.
